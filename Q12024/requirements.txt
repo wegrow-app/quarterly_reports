@@ -6,4 +6,3 @@ streamlit
 polars
 metabasepy
 datetime
-dateutil
