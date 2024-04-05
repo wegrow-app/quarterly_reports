@@ -17,7 +17,7 @@ PALETTE=['#00B0F0', '#0A113A',  '#002c5f',  '#007eba', '#96ffff', '#FC2F6A', '#f
 st.set_page_config(layout="wide")
 st.title("Performance Metrics Q1 2024")
 
-logo = Image.open('./wegrow.png')
+logo = Image.open('Q12024/wegrow.png')
 st.sidebar.image(logo)
 
 def load_data(path):
@@ -387,7 +387,7 @@ def load_dfs(_mbapi: Client, clients: dict, query: str, timestamp: bool = True) 
 
 def main():
     # Load Data
-    df = load_data('q1.csv')
+    df = load_data('Q12024/q1.csv')
     total_users = """
         select count(*) 
         from users_detail_with_preferences
