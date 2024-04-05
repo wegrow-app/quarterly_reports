@@ -11,10 +11,14 @@ import os
 import time
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from PIL import Image
 
 PALETTE=['#00B0F0', '#0A113A',  '#002c5f',  '#007eba', '#96ffff', '#FC2F6A', '#ff67b0', '#ff9aee', '#d394e7']
 st.set_page_config(layout="wide")
 st.title("Performance Metrics Q1 2024")
+
+logo = Image.open('./wegrow.png')
+st.sidebar.image(logo)
 
 def load_data(path):
     data = pd.read_csv(path)
