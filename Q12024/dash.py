@@ -547,7 +547,13 @@ def main():
             'Suntory Beam': '2022-09-01',
             'Suntory Caribbean': '2022-02-01',
             'Suntory DC': '2023-01-01',
-            'Unilever Icecream': '2023-02-01'
+            'Unilever Icecream': '2023-02-01',
+            'Henkel ACB':'2022-02-01',
+            'JDE':'2022-07-01',
+            'Logitech':'2023-04-01',
+            'Organon':'2023-08-01',
+            'Unilever Lux':'2023-05-01',
+            'Cora':'2021-10-01'
         }
         columns = ['Client'] + [f'M+{i}' for i in range(25)]
 
