@@ -328,6 +328,13 @@ client_list = {
                     "email_exception": [],
                     "use_case": "BP Scaling",
                 },
+                "JDE": {
+                    "id": 26,
+                    "url": "https://jde.wegrow-app.com/",
+                    "email_exception": [],
+                    "use_case": "BP Scaling",
+            
+                },
                 "Diageo": {"id": 68, "url": "None", "email_exception": [], "use_case": "BP Scaling"},
             }
 # client_id = {client: client_list[client]["id"] for client in client_list if client_list[client]["use_case"] == "BP Scaling"}
