@@ -24,7 +24,7 @@ def load_data(path):
     data = pd.read_csv(path)
     return data
 
-start_date = "2022-04-01"
+start_date = "2022-01-01"
 end_date = "2024-03-01"
 date_range = pd.period_range(start=start_date, end=end_date, freq='M')
 
