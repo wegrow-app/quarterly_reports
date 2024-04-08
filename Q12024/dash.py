@@ -424,10 +424,9 @@ def main():
     df_total_users = df_total_users[['Client', 'count']].rename(columns={'count':'Total Users'})
 
     # Data Clean
-    clients_to_drop = ['Coca-Cola', 'Coca E@S', 'Henkel AOD', 'Henkel Hair Professional', 'Henkel LHC', 'Cora',
-                       'LVMH', 'Logitech', 'Bayer CH', 'Essity', 
-                       'Rexel', 'Sandoz', 'Sanofi', 'Diageo', 'Merck', 'Michelin', 'Nestle Confectionary', 'KHNE', 
-                       'Henkel ACB', 'Suntory DEI', 'Unilever Lux']
+    clients_to_drop = ['Coca-Cola', 'Coca E@S', 'Henkel AOD', 'Henkel Hair Professional', 'Henkel LHC',
+                       'LVMH','Rexel', 'Sandoz', 'Sanofi', 'Diageo', 'Merck', 'Michelin', 'Nestle Confectionary',
+                        'Suntory DEI']
     df = df[~df['Client'].isin(clients_to_drop)]
     df_total_users = df_total_users[~df_total_users['Client'].isin(clients_to_drop)]
 
