@@ -581,13 +581,11 @@ def main():
                 for _, user in first_cohort_users.iterrows():
                     # Calculate the active months from first to last login
                     active_months = months_between(user['first_login_dt'], user['last_login_dt'])
+                    active_months = min(active_months, 24)
 
                     # Increment the count for each month the user was active within the first 24 months
                     for month in range(active_months + 1):
-                        if month < 24:
-                            row_data[month] += 1
-                        elif month >= 24: 
-                            row_data[24] += 1
+                        row_data[month] += 1
 
                 rows_list.append({'Client': client, **{f'M+{i}': row_data[i] for i in range(25)}})
 
