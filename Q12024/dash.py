@@ -584,10 +584,10 @@ def main():
 
                     # Increment the count for each month the user was active within the first 24 months
                     for month in range(active_months + 1):
-                        if month < 25:
+                        if month < 24:
                             row_data[month] += 1
-                        elif month >= 25: 
-                            row_data[25] += 1
+                        elif month >= 24: 
+                            row_data[24] += 1
 
                 rows_list.append({'Client': client, **{f'M+{i}': row_data[i] for i in range(25)}})
 
